@@ -1,0 +1,1005 @@
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 13px;
+	text-align: center;
+	margin: 0;
+}
+img {
+	border: 0;
+}
+.block img {
+	margin: 5px;
+}
+a {
+	color: #1C4B9C;
+}
+.bcontents a, .message a, .warning a{
+	color: #2b3277;
+}
+.block a, #login a {
+	color: #a7d2ff;
+}
+#container {
+	width: 100%;
+	min-height: 100%;
+	text-align: left;
+	background-color: #ddd;
+	background-image: url(bg.jpg);
+	background-position: center bottom;
+	padding-bottom: 10px;
+}
+#header {
+	height: 122px;
+	background-color: #013558;
+	background-image: url("header.jpg");
+}
+.head {
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.headname {
+	line-height: 24px;
+	height: 24px;
+	margin-left: 35px;
+}
+#logo {
+	width: 800px;
+	height: 97px;
+	background-repeat: no-repeat;
+	background-image:url(logo.jpg);
+}
+#logo a {
+	width: 800px;
+	height: 122px;
+	display: block;
+}
+#login {
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: right;
+	color: white;
+	background-image: url(login.png);
+	line-height: 30px;
+	height: 40px;
+}
+#login .linkbutton {
+	margin-right: 10px;
+	line-height: 14px;
+	color: white;
+}
+#tabs {
+	position: absolute;
+	right: 0;
+	top: 60px;
+	width: 990px;
+}
+.tab {
+	display: block;
+	float: right;
+	background-image: url(black.png);
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	-moz-border-top-left-radius:5px;
+	-moz-border-top-right-radius:5px;
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	color: white;
+	margin-right: 10px;
+}
+.tab img {
+	vertical-align: middle;
+}
+#nav {
+	width: 100%;
+	height: 27px;
+	background-image: url(nav.png);
+}
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+	padding: 0;
+	height: 27px;
+	margin-left: 10px;
+}
+
+#nav ul li {
+	display: block;
+	float: left;
+	height: 27px;
+	padding-left: 5px;
+	padding-right: 5px;
+	line-height: 27px;
+	font-family: 'mecharegular';
+	font-size: 16px;
+}
+#nav ul li:hover, #nav ul li.active {
+	background: 0;
+	background-image: url(nav_hover.png);
+}
+#nav ul li.active a{
+	text-decoration: none;
+	font-weight: bold;
+}
+#nav ul li a {
+	color: white;
+}
+#main {
+	text-align: center;
+}
+#page {
+	width: 990px;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+	color: black;
+}
+#page_left {
+	width: 200px;
+	overflow: hidden;
+	margin-right: 10px;
+	float: left;
+}
+#page_right {
+	width: 780px;
+	margin-left: 10px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+#footer {
+	text-align: center;
+	margin-top: 10px;
+	border-top: 1px solid #242424;
+	line-height: 30px;
+}
+#searchbox {
+	width: 100%;
+	background-color: #bcc0e1;
+	background-image: url(search_bg.png);
+	background-position: bottom;
+	background-repeat: repeat-x;
+	text-align: center;
+}
+#searchbox #inner {
+	margin: 0 auto;
+	width: 700px;
+	padding: 10px;
+}
+#searchbox form {
+	padding: 0;
+}
+div.sitemessage {
+	position: absolute;
+	top: 0;
+	left: 200px;
+	padding: 10px;
+	background-color: #F5DF95;
+	border-left: 1px solid #D17A00;
+	border-right: 1px solid #D17A00;
+	border-bottom: 1px solid #D17A00;
+}
+.block {
+	margin-top: 10px;
+	color: #1b1b1b;
+}
+.btitle {
+	position: relative;
+	color: #eee;
+	font-family: righteous;
+	font-size: 20px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+	height: 22px;
+	line-height: 32px;
+	padding-left: 10px;
+	z-index: 2;
+}
+.notitle .btitle {
+z-index: 1;
+}
+.notitle .bcontents_text {
+	margin-top: -20px;
+}
+#page_left .btitle {
+	background-image: url(block_200_t.png);
+}
+#page_right .btitle {
+	background-image: url(block_780_t.png);
+}
+.bcontents {
+	position: relative;
+	z-index: 1;
+}
+.bcontents_t {
+	padding: 8px;
+	color: white;
+}
+.bcontents_t p {
+	margin: 0;
+}
+#intro p {
+	margin-top: 20px;
+}
+.bcontents_b {
+	height: 22px;
+	width: 100%;
+}
+#page_left .bcontents_b {
+	background-image: url(block_200_b.png);
+}
+#page_right .bcontents_b {
+	background-image: url(block_780_b.png);
+}
+#page_left .bcontents_t {
+	background-image: url(block_200.png);
+}
+#page_right .bcontents_t {
+	background-image: url(block_780.png);
+}
+#login form {
+	margin: 0;
+	padding; 0;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+#username, #password {
+	padding: 1px;
+	padding-left: 20px;
+	height: 22px;
+	background-repeat: no-repeat;
+	background-position: 2px 4px;
+
+}
+#username{
+	background-image: url(username.png);
+}
+#password {
+	background-image: url(password.png);
+}
+#loginbutton {
+	
+}
+
+/**/
+#homepage {
+	width: 770px;
+	height: 250px;
+	position: relative;
+	margin-top: -30px;
+}
+#homepage_bottom {
+	width: 100%;
+	height: 285px;
+	position: relative;
+}
+#community {
+	height: 250px;
+	overflow-y: scroll;
+}
+#homepage_ad {
+	width: 325px;
+	position: absolute;
+	left: 445px;
+	top: 0;
+}
+#intro {
+	width: 380px;
+	height: 200px;
+	position: absolute;
+	left: 0;
+	padding-left: 10px;
+}
+#intro p {
+	line-height: 20px;
+	padding: 0:
+	margin: 0;
+}
+#vid {
+	width: 350px;
+	height: 262px;
+	position: absolute;
+	padding: 10px;
+	right: 0;
+	top: 0;
+}
+#profile {
+	width: 100%;
+	height: 245px;
+	position: relative;
+}
+#profile_info {
+	width: 310px;
+	height: 230px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#profile_info .bcontents {
+	width: 310px;
+	height: 230px;
+}
+#profile_games {
+	width: 440px;
+	height: 220px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#profile_games .bcontents {
+	overflow-y: scroll;
+	height: 185px;
+	text-align: center;
+}
+#userinfo {
+	float: right;
+	width: 170px;
+	margin: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	border: 1px solid #ddd;
+}
+#userdescription {
+	clear: both;
+	height: 80px;
+	padding: 5px;
+	overflow: auto;
+}
+
+.comment {
+	height: 140px;
+	overflow: hidden;
+}
+.commentuser {
+	width: 100px;
+	float: left;
+}
+.commenttext {
+	margin-left: 10px;
+	float: right;
+	width: 620px;
+	height: 140px;
+	overflow: auto;
+}
+.customize {
+	width: 140px;
+	height: 120px;
+	float: left;
+	text-align: center;
+}
+.customize .game {
+	float: default;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.game {
+	float: left;
+	font-size: 12px;
+	width: 140px;
+	height: 80px;
+	text-align: center;
+	position: relative;
+	margin: 1px;
+	border: 1px solid #aaa;
+}
+.game img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}
+.gamecaption {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	left: 0;
+	bottom: 0;
+	background-image: url(/resources/pixel.png);
+	z-index: 3;
+	word-wrap: break-word;
+}
+.gamecaption img {
+	border: 0;
+}
+.gamecaption a {
+	color: white;
+	border: 0;
+}
+.tooltip {
+	background-color: #eee;
+	border: 1px solid #aaa;
+	displaay:none;
+}
+.userrow {
+	position: relative;
+	width: 100px;
+	height: 120px;
+	float: left;
+	border: 1px solid #aaa;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.characterrow {
+	width: 100%;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.namerow {
+	font-size: 11px;
+	width: 100%;
+	margin-left: 0px;
+	text-align: center;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+	bottom: 0;
+	background-image: url(/resources/pixel.png);
+}
+.namerow a {
+	color: white;
+}
+.achievement {
+	margin: 5px;
+	width: 80px;
+	text-align: center;
+	float: left;
+}
+.achievementimage {
+	height: 64px;
+}
+#frame {
+	display:none;
+}
+.report {
+	cursor:pointer;
+}
+
+#progressbar {
+	width: 100%;
+	height: 36px;
+	border-top: 1px solid #444;
+	background-color: #eee;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	line-height: 35px;
+	text-align: left;
+}
+#progressbar img {
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
+#progressbar p {
+	line-height: 16px;
+	margin-left: 10px;
+	font-size: 11px;
+	float: left;
+	color: black;
+}
+#gameimg {
+	float: left;
+	width: 450px;
+	height: 300px;
+	position: relative;
+}
+.itemimage{
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 450px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events:none;
+}
+.itemimage:hover {
+	display: block !important;
+}
+#gameauthor {
+	padding: 10px;
+	line-height: 20px;
+}
+#gameauthor img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+#character{
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: left;
+	width: 90px;
+	height: 100px;
+	padding: 3px;
+	border: 1px solid #111;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: white;
+	position: relative;
+}
+#charactername{
+	width: 90px;
+	float: left;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-image:url("pixel.png");
+	color: white;
+	padding: 2px;
+	word-wrap: break-word;
+}
+#charactername a {
+	color: white;
+}
+#gameleft {
+	width: 150px;
+	height: 300px;
+	font-size: 11px;
+	float: left;
+	text-align: center;
+	background-color: #333;
+	background-image:url("gamebg.gif");
+	color: white;
+	border-right: 1px solid black;
+}
+#gamedescription {
+	clear: both;
+	height: 80px;
+	padding: 5px;
+	color: white;
+	border: 1px solid #595959;
+	background-color: #242424;
+	overflow: auto;
+	margin-bottom: 10px;
+}
+#gameinfo {
+	text-align: left;
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 100px;
+}
+#game_page {
+	width: 100%;
+	height: 300px;
+	position: relative;
+}
+#gameimage {
+	width: 450px;
+	height: 300px;
+	position: absolute;
+	left: 0;
+	background-image: url(/resources/alpha50.png);
+}
+#gameimage iframe {
+position: absolute;
+left: 0;
+top: 0;
+border: 0;
+}
+#gameoptions {
+	width: 320px;
+	height: 300px;
+	float: right;
+}
+
+#gameoptions .bcontents {
+	height: 280px;
+}
+#gameimage_top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-indent: 5px;
+	z-index: 5;
+	width:450px;
+	height:32px;
+	line-height:32px;
+	text-indent: 16px;
+	background-image:url(/resources/pixel.png);
+	color:white;
+}
+#gameimage_bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-indent: 5px;
+	z-index: 5;
+	width:450px;
+	height:32px;
+	line-height:32px;
+	text-indent: 16px;
+	background-image:url(/resources/pixel.png);
+	color:white;
+}
+#gameimage_bottom .head {
+	float: left;
+	margin-top: 3px;
+	margin-left: 4px;
+}
+#gameright {
+	width: 246px;
+	height: 300px;
+	float: left;
+	font-size: 11px;
+	background-color: #ccc;
+	border-left: 1px solid black;
+}
+#gameright img
+{
+	margin-left: 5px;
+}
+.gameright {
+	font-weight: bold;
+	border-bottom: 1px solid black;
+	margin: 5px;
+	text-align: left;
+}
+#gameright em {
+	margin-left: 4px;
+}
+#gameblock .bcontents{
+	padding: 0;
+	height: 300px;
+}
+
+.ratebuttons {
+	position: relative;
+	display: inline-block;
+}
+.ratings {
+	float: left;
+	color: #666;
+	font-size: 10px;
+	font-weight: bold;
+}
+.ratings img {
+	vertical-align: text-bottom;
+}
+.ratebit {
+	display: inline-block;
+	background-color: white;
+	border:1px solid #eee;
+	margin: 1px;
+	padding: 2px;
+}
+.ratebuttons_top {
+	width: 100%;
+	height: 100%;
+	background-image:url(/white_75.png);
+	position: absolute;
+	z-index: 10;
+}
+.ratebuttons_outer {
+	color: #666;
+	font-size: 10px;
+	font-weight: bold;
+	float: right;
+}
+
+#chatbar {
+	width: 100%;
+	height: 35px;
+	border-top: 1px solid #444;
+	background-color: #eee;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+#chatbox {
+	border:1px solid black;
+	background-color: #eee;
+	width: 800px;
+	height: 510px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: -250px;
+	z-index: 500;
+}
+#chatbox_inner {
+	width: 790px;
+	height: 500px;
+	margin-top: 5px;
+	margin-left: 10px;
+	position: relative;
+	height: 15px;
+}
+#chatbox_left {
+	color: #888;
+	position: absolute;
+	left: 10px;
+	text-align: left !important;
+	height: 15px;
+	line-height: 15px;
+}
+#chatbox_right{
+	position: absolute;
+	right: 10px;
+	top: 0;
+	height: 10px;
+	width: 100px;
+	text-align: right;
+	height: 15px;
+	line-height: 15px;
+}
+#chatbox iframe {
+	border: none;
+	width: 780px;
+	height: 485px;
+	margin: 0;
+	margin-top: 15px;
+	padding: 0;
+}
+#chatbar iframe {
+	border: none;
+	overflow: hidden;
+}
+#chatbutton {
+	position: fixed;
+	bottom: 5px;
+	left: 5px;
+}
+.clear:before, .clear:after {
+  content: "\0020"; display: block; height: 0; visibility: hidden;  
+} 
+
+.clear:after { clear: both; }   
+.clear { zoom: 1; }
+
+/**/
+
+hr
+{
+	height: 1px;
+	color: black;
+	background-color: black;
+	border: none;
+}
+
+h1 {
+	color: #3a5c9a;
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #3a5c9a;
+	
+	font-family: righteous;
+	font-size: 20px;
+	font-weight: normal;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+	height: 26px;
+	line-height: 32px;
+}
+h1:first-child {
+	margin: 0;
+}
+.block h1 {
+	color: #eee;
+	border-bottom: 1px solid #e19100;
+}
+input[type="submit"], a.linkbutton, input[type="button"]{
+	display: inline-block;
+	padding: 4px;
+	border: 1px solid #595959;
+	background-color: #242424;
+	color: white;
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	cursor: pointer;
+	text-decoration: none;
+}
+input[type="text"], input[type="password"], textarea {
+	background: none;
+	border: 1px solid #595959;
+	background-image:url(/resources/alpha60.png);
+	color: white;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+a.linkbutton img, button img{
+	vertical-align: middle;
+}
+input[type="submit"]:hover, a.linkbutton:hover, input[type="button"]:hover {
+	background-color: #6b6b6b;
+	border: 1px solid #e19100;
+}
+input[type="submit"]:active, a.linkbutton:active, input[type="button"]:active, {
+	background-color: #242424;
+	border: 1px solid #595959;
+}
+
+#make_games {
+	width: 124px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	right: 20px;
+	background-image:url(make-games.png);
+}
+#play_games {
+	width: 124px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	right: 154px;
+	background-image:url(play-games.png);
+}
+
+div.warning {
+	padding: 10px;
+	margin: 10px 10px;
+	color: black;
+	background-color: #F5DF95;
+	border: 1px solid #D17A00;
+	border-left: 5px solid #D17A00;
+}
+div.message {
+	padding: 10px;
+	margin: 10px 10px;
+	color: black;
+	background-color: #c8d5e6;
+	border: 1px solid #245fa9;
+	border-left: 5px solid #245fa9;
+}
+
+#usertitle {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #dceaf2;
+	overflow-x: hidden;
+	width: 300px;
+}
+#gameimage_inner {
+	width: 100%;
+	height: 100%;
+	background-image: url(gamebg.png);
+}
+#gameimage_inner a {
+	color: #a8dbf8;
+}
+.gamerighttitle {
+	border-bottom: 1px solid white;
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	margin-top: 5px;
+	margin-left: 5px;
+	width: 145px;
+}
+.customtitle {
+	text-align: center;
+	background-color: #eee;
+	width: 300px;
+	height: 20px;
+	line-height: 20px;
+}
+.comment {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid #aaa;
+}
+#playoptions {
+	width: 450px;
+	height: 300px;
+	background-image: url(/gamebg2.png);
+	color: white;
+}
+.playoptioncolumn {
+	width: 150px;
+	float: left;
+}
+
+#guestoverlay {
+	display: none;
+	z-index: 9;
+	position: absolute;
+	width: 400px;
+	height: 200px;
+	background-color: white;
+	border: 1px solid black;
+	top: 20px;
+	left: 50%;
+	margin-left: -200px;
+	background-image:url("memberbg.png");
+	color: white;
+}
+#guestoverlay a {
+	color: #a7d2ff;
+}
+#guestoverlay p
+{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 25px;
+	font-size: 17px;
+}
+#guestbg {
+	display:none;
+	z-index: 8;
+	position: absolute;
+	width: 400px;
+	height: 200px;
+	background-color: black;
+	top: 25px;
+	left: 50%;
+	margin-left: -195px;
+}
+#serveroverlay {
+	display: none;
+	z-index: 9;
+	position: absolute;
+	width: 400px;
+	height: 310px;
+	background-color: white;
+	color: white;
+	border: 1px solid black;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -200px;
+	background-image:url("memberbg.png");
+}
+#serveroverlay a {
+	color: #a7d2ff;
+}
+#serveroverlay p
+{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 25px;
+	font-size: 17px;
+}
+#serverbg {
+	display:none;
+	z-index: 8;
+	position: absolute;
+	width: 400px;
+	height: 310px;
+	background-color: black;
+	top: 50%;
+	left: 50%;
+	margin-top: -95px;
+	margin-left: -195px;
+}
+
+#header_ad {
+	width: 468px;
+	height: 60px;
+	position: absolute;
+	left: 220px;
+	top: 16px;
+}
+#left_ad {
+	width: 120px;
+	height: 600px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+#likebutton {
+	position: absolute;
+	right: 0;
+	top: 50px;
+}
+#left_soldier {
+	width: 200px;
+	height: 159px;
+	background-image:url(left.gif);
+	background-position: center 0;
+	background-repeat: no-repeat;
+	position: relative;
+}

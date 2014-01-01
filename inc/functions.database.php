@@ -1,0 +1,1 @@
+<?phpfunction db_query($query){	global $link;	$result = mysql_query($query, $link);	if(!$result)		error_page("Database error: ".mysql_error($link));	else		return $result;}?>

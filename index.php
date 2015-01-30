@@ -1,4 +1,5 @@
 <?php
+//Test
 define("NOT_IN_FORUM", 1);
 include("inc/init.php");
 include($local.'/pages.php');
